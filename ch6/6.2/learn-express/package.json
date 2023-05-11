@@ -1,5 +1,5 @@
 {
-  "name": "learn-express",
+  "name": "6.2",
   "version": "0.0.1",
   "scripts": {
     "start": "nodemon app"
@@ -8,11 +8,12 @@
     "nodemon": "^2.0.3"
   },
   "dependencies": {
-    "cookie-parser": "^1.4.5",
-    "dotenv": "^8.2.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
+    "express-session": "^1.17.3",
     "morgan": "^1.10.0",
-    "multer": "^1.4.2"
+    "multer": "^1.4.4"
   }
 }
