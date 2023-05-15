@@ -5,19 +5,49 @@
   <meta charset="utf-8">
   <title>시퀄라이즈 서버</title>
   <style>
-    fieldset {
-      width: 15vw;
-    }
-
     table {
-      border: 1px solid black;
+      border: 1px solid #9696ff;
       border-collapse: collapse;
-      /* width: 50vw; */
+
+
     }
 
     table th,
     table td {
-      border: 1px solid black;
+      border: 1px solid #9696ff;
+      padding: 5px;
+    }
+
+    thead {
+      color: #242424;
+      font-size: 2.5vw;
+    }
+
+    tbody {
+      font-size: 1vw;
+    }
+
+    fieldset {
+      position: relative;
+      width: 28vw;
+      color: #9696ff;
+      border: 0.5px solid #242424;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 2vw;
+    }
+
+    button {
+      background-color: #9696ff;
+      border: solid 1px #242424;
+      border-radius: 5px;
+      color: #242424;
+      font-size: 1px;
+      margin-top: 2vh;
+      padding: 0.3vw 1vh;
+      position: relative;
+      float: right;
+      right: 1vw;
     }
   </style>
 </head>
@@ -77,16 +107,7 @@
         <th>삭제</th>
       </tr>
     </thead>
-    <tbody>
-      <!-- {% for user in users %}
-      <tr>
-        <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.age}}</td>
-        <td>{{ '기혼' if user.married else '미혼'}}</td>
-      </tr>
-      {% endfor %} -->
-    </tbody>
+    <tbody></tbody>
   </table>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/sequelize.js"></script>
