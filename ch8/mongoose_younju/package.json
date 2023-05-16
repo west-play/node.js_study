@@ -1,7 +1,7 @@
 {
-  "name": "learn-mongoose_younju",
+  "name": "mongoose_younju",
   "version": "0.0.1",
-  "description": "몽구스를 배우자",
+  "description": "몽구스를 배워보쟈",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app"

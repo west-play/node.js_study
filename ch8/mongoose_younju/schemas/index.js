@@ -7,13 +7,10 @@ const connect = () => {
   mongoose.connect('mongodb://root:12345678@localhost:27017/admin', {
     dbName: 'nodejs',
     useNewUrlParser: true,
-    useCreateIndex: true,
-  }, (error) => {
-    if (error) {
-      console.log('몽고디비 연결 에러', error);
-    } else {
-      console.log('몽고디비 연결 성공');
-    }
+  }).then(() => {
+    console.log("몽고디비 연결 성공");
+  }).catch((err) => {
+    console.error("몽고디비 연결 에러", err);
   });
 };
 
