@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "nodejsbook",
-    "database": "nodebird",
+    "password": "12345678",
+    "database": "younju_nodebird",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "nodejsbook",
+    "password": "12345678",
     "database": "nodebird_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
