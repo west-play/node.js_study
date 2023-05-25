@@ -4,7 +4,7 @@
   "description": "노드 경매 시스템",
   "main": "app.js",
   "scripts": {
-    "start": "nomdemon app"
+    "start": "nodemon app"
   },
   "author": "seoyounju",
   "license": "ISC",
@@ -21,7 +21,9 @@
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "sequelize": "^6.31.1",
-    "sequelize-cli": "^6.6.0"
+    "sequelize-cli": "^6.6.0",
+    "socket.io": "^4.6.1",
+    "sse": "^0.0.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
