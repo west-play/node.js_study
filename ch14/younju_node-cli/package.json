@@ -1,15 +1,17 @@
 {
-  "name": "node-cli",
+  "name": "younju_node-cli",
   "version": "0.0.1",
   "description": "nodejs cli program",
   "main": "index.js",
-  "author": "ZeroCho",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seoyounju",
   "license": "ISC",
   "bin": {
     "cli": "./command.js"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
     "commander": "^9.5.0",
     "inquirer": "^8.2.5"
   }

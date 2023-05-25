@@ -91,13 +91,13 @@ program
   .alias('tmpl')
   .option('-f, --filename [filename]', '파일명을 입력하세요.', 'index')
   .option('-d, --directory [path]', '생성 경로를 입력하세요', '.')
-  .action((type, options) => {
+  .action((type, options, command) => {
     makeTemplate(type, options.filename, options.directory);
   });
 
 program
-  .action((cmd, args) => {
-    if (args) {
+  .action((options, command) => {
+    if (command.args.length !== 0) {
       console.log(chalk.bold.red('해당 명령어를 찾을 수 없습니다.'));
       program.help();
     } else {
